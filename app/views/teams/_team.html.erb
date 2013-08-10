@@ -3,8 +3,8 @@
 <tr>
     <td><%= team.description %></td>
 
-    <td><%= link_to 'View Team', team %></td>
-    <td><%= link_to 'Edit Team', edit_team_path(team) %></td>
-    <td><%= link_to 'Delete Team', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+   <td><%= link_to 'Show', cyclist %></td>
+    <td><%= link_to 'Edit', edit_cyclist_path(cyclist) %></td>
+    <td><%= link_to 'Destroy', cyclist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
  </tr>
  <% end %>

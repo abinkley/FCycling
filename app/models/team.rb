@@ -6,4 +6,7 @@ class Team < ActiveRecord::Base
   belongs_to :user
   validates :user_id, presence: true
 
+  has_many :teammates
+  has_many :cyclists, :through => :teammates
+
 end

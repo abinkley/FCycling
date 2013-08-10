@@ -1,5 +1,8 @@
 FantasyCycling::Application.routes.draw do
 
+  resources :cyclists
+
+
   namespace :admin do
   match '/' => 'users#index'
   resources :users

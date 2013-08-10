@@ -1,0 +1,13 @@
+ <%# if current_user == team.user %>
+
+<tr>
+    <td><%= cyclist.name %></td>
+
+    <td><%= link_to 'View Cyclist', cyclist %></td>
+    <td><%= link_to 'Edit Cyclist', edit_cyclist_path(cyclist) %></td>
+    <td><%= link_to 'Delete Cyclist', cyclist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+ </tr>
+ <%# end %>
+
+ 
+

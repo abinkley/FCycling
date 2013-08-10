@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+            <h2>
+  						<%= @cyclist.name %>
+            </h2>
+            <p>
+              <b>Value:</b>
+  							<%= @cyclist.value %>
+            </p>
+            <%# if current_user == @cyclist.user %>
+
+            <%= link_to 'Edit', edit_cyclist_path(@cyclist) %> |
+
+            <%# end %>
+            <%= link_to 'Back', cyclist_path %>
+
+        </div>
+    </div>
+</div>
