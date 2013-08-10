@@ -1,0 +1,24 @@
+<% if user_signed_in? %>
+        
+   <h2>
+    <%= link_to "My Teams", teams_path %>
+   </h2>
+
+    <h2>My Standings</h2>
+
+    
+
+
+ <% else %>
+
+	<div class="hero-unit">
+		<h1>Crankturn Fantasy Cycling!</h1>
+		
+		<p>
+		</br>
+
+			<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-large" %>
+
+		</p>
+	</div>
+<% end %>
